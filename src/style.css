@@ -1,0 +1,87 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 2em;
+    color: #333;
+}
+
+.header {
+    position: static;
+    height: 20%;
+    width: 30%;
+    z-index: 1;
+    margin-bottom: 20px;
+    background-color: #f0f0f0a0;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.tl {
+    position: fixed; top: 0; left: 0; right: 50%; bottom: 50%;
+    background: rgb(206, 115, 115);
+}
+
+.tr {
+    position: fixed; top: 0; left: 50%; right: 0; bottom: 50%;
+    background: rgb(99, 99, 187);
+}
+
+.br {
+    position: fixed; top: 50%; left: 50%; right: 0; bottom: 0;
+    background: rgb(111, 196, 111);
+}
+
+.bl {
+    height: 50%;
+    width: 50%;
+    top: 50%; left: 0; right: 50%; bottom: 0;
+    position: fixed;
+    background-color: #2f234b;
+}
+
+#myMusic {
+    background-image: url('./assets/awcover.jpg');
+    background-position: 50% 80%;
+}
+
+#software {
+    background-image: url('./assets/synth.png');
+    background-position: 50% 80%;
+}
+
+a {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    width: 50%;
+    height: 50%;
+}
+
+a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: backdrop-filter 0.3s ease;
+    backdrop-filter: blur(0.7vw);
+}
+
+a:hover::after {
+    transition: backdrop-filter 0.3s ease;
+    backdrop-filter: blur(0vw);
+}
+
+span {
+    color: #f0f0f0;
+    font-size: 44px;
+    left: 50%;
+    position: absolute;
+    text-shadow: 0px 5px 7px  rgba(0, 0, 0, 1);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    pointer-events: none;
+}
