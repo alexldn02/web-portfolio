@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link href="style.css" rel="stylesheet">
     <script defer src="script.js"></script>
-    <audio id="mySoundClip">
+    <audio id="tapeDispenser">
         <source src="assets/test.flac"></source>
         Your browser isn't invited for super fun audio time.
     </audio>
@@ -16,12 +16,24 @@
         <source src="assets/recording.ogg"></source>
         Your browser isn't invited for super fun audio time.
     </audio>
+    <audio id="demo">
+        <source src="assets/demo.mp3"></source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
+    <audio id="typing">
+        <source src="assets/typing.mp3"></source>
+        Your browser isn't invited for super fun audio time.
+    </audio>
 </head>
 <body>
-    <div class="header">Alexander Cairns</div>
-    <div class="tl"><span>Demos</span></div>
-    <div class="tr"><span>About</span></div>
-    <div class="bl"><a id="myMusic" href="mymusic.html"></a><span>My Music</span></div>
-    <div class="br"><a id="software" href="software.html"></a><span>Software</span></div>
+    <div class="header">
+        <h1>Alexander Cairns</h1>
+        <h2>Musician, Producer & Software Developer</h2>
+    </div>
+
+    <div class="tl"><a id="demos" href="mymusic.html"></a><span>My Music</span></div>
+    <div class="tr"><a id="about" href="mymusic.html"></a><span>About</span></div>
+    <div class="bl"><a id="myMusic" href="mymusic.html"></a><span>Tape Dispenser</span></div>
+    <div class="br"><a id="software" href="software.html"></a><span>My Software</span></div>
 </body>
 </html>

@@ -1,50 +1,64 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 2em;
+    font-size: 2vw;
     color: #333;
 }
 
 .header {
-    position: static;
-    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
     width: 30%;
     z-index: 1;
-    margin-bottom: 20px;
-    background-color: #f0f0f0a0;
+    border-radius: 2vw;
+    background-color: #f0f0f070;
     padding: 50px;
-    text-align: center;
     display: flex;
+    text-align: center;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0;
+    user-select: none;
+    transition: backdrop-filter 0.3s ease;
+    backdrop-filter: blur(1vw);
 }
 
 .tl {
     position: fixed; top: 0; left: 0; right: 50%; bottom: 50%;
-    background: rgb(206, 115, 115);
+    background-color: #f055f0;
 }
 
 .tr {
     position: fixed; top: 0; left: 50%; right: 0; bottom: 50%;
-    background: rgb(99, 99, 187);
+    background-color: #f0f055;
 }
 
 .br {
     position: fixed; top: 50%; left: 50%; right: 0; bottom: 0;
-    background: rgb(111, 196, 111);
+    background-color: #f0f0f0;
 }
 
 .bl {
-    height: 50%;
-    width: 50%;
-    top: 50%; left: 0; right: 50%; bottom: 0;
-    position: fixed;
+    position: fixed; top: 50%; left: 0; right: 50%; bottom: 0;
     background-color: #2f234b;
+}
+
+#about {
+    background-image: url('./assets/desk.jpg');
+    background-position: 50% 50%;
+}
+
+#demos {
+    background-image: url('./assets/ableton.png');
+    background-position: 50% 50%;
 }
 
 #myMusic {
     background-image: url('./assets/awcover.jpg');
-    background-position: 50% 80%;
+    background-position: 50% 50%;
 }
 
 #software {
@@ -79,7 +93,7 @@ span {
     font-size: 44px;
     left: 50%;
     position: absolute;
-    text-shadow: 0px 5px 7px  rgba(0, 0, 0, 1);
+    text-shadow: 0px 5px 7px rgba(0, 0, 0, 1), 0 0 10px #000;;
     top: 50%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
