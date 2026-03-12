@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        .header {
+            font-size: 2vw;
+            color: #333;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 30%;
+            width: 30%;
+            z-index: 1;
+            border-radius: 2vw;
+            background-color: #f0f0f070;
+            padding: 50px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            user-select: none;
+            transition: backdrop-filter 0.3s ease;
+            backdrop-filter: blur(1vw);
+        }
+
+        .tl {
+            position: fixed; top: 0; left: 0; right: 50%; bottom: 50%;
+            background-color: #f055f0;
+        }
+
+        .tr {
+            position: fixed; top: 0; left: 50%; right: 0; bottom: 50%;
+            background-color: #f0f055;
+        }
+
+        .br {
+            position: fixed; top: 50%; left: 50%; right: 0; bottom: 0;
+            background-color: #f0f0f0;
+        }
+
+        .bl {
+            position: fixed; top: 50%; left: 0; right: 50%; bottom: 0;
+            background-color: #2f234b;
+        }
+
+        #about {
+            background-image: url('./assets/desk.jpg');
+            background-position: 50% 50%;
+        }
+
+        #demos {
+            background-image: url('./assets/ableton.png');
+            background-position: 50% 50%;
+        }
+
+        #soundDesign {
+            background-image: url('./assets/vital.png');
+            background-position: 50% 80%;
+        }
+
+        #software {
+            background-image: url('./assets/synth.png');
+            background-position: 50% 50%;
+        }
+
+        a {
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: fixed;
+            width: 50%;
+            height: 50%;
+        }
+
+        a::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: backdrop-filter 0.3s ease;
+            backdrop-filter: blur(0.7vw);
+        }
+
+        a:hover::after {
+            transition: backdrop-filter 0.3s ease;
+            backdrop-filter: blur(0vw);
+        }
+
+        span {
+            color: #f0f0f0;
+            font-size: 44px;
+            left: 50%;
+            position: absolute;
+            text-shadow: 0px 5px 7px rgba(0, 0, 0, 1), 0 0 10px #000;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            pointer-events: none;
+        }
+    </style>
+    <script defer src="script.js"></script>
+    <audio id="soundDesignDemo">
+        <source src="./assets/sound design.mp3"></source>
+        Please enable audio in your browser.
+    </audio>
+    <audio id="synth">
+        <source src="./assets/synth.mp3"></source>
+        Please enable audio in your browser.
+    </audio>
+    <audio id="demo">
+        <source src="./assets/demo.mp3"></source>
+        Please enable audio in your browser.
+    </audio>
+    <audio id="typing">
+        <source src="./assets/typing.mp3"></source>
+        Please enable audio in your browser.
+    </audio>
+</head>
+<body>
+    <div class="header">
+        <h1>Alexander Cairns</h1>
+        <h2>Musician, Producer, Sound Designer & Software Developer</h2>
+    </div>
+
+    <div class="tl"><a id="demos" href="mymusic.html"></a><span>My Music</span></div>
+    <div class="tr"><a id="about" href="about.html"></a><span>About</span></div>
+    <div class="bl"><a id="soundDesign" href="sounddesign.html"></a><span>Sound Design</span></div>
+    <div class="br"><a id="software" href="software.html"></a><span>My Software</span></div>
+</body>
+</html>

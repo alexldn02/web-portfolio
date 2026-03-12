@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World 2</title>
+    <title>My Software Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('./assets/synth.png');
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World 2</h1>
+    <div class="container">
+        <a href="index.html" class="btn btn-secondary mb-4">← Back</a>
+        <h1 class="mb-4">My Software Projects</h1>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Modular Synthesizer</b></h5>
+                        <p class="card-text">A web-based modular synthesizer built with JavaScript and Web Audio API.</p>
+                        <a href="https://alexldn02.github.io/modular-synth/" class="btn btn-primary">Modular Synthesizer</a>
+                        <a href="https://github.com/alexldn02/modular-synth" class="btn btn-secondary">GitHub Repository Link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>This Website</b></h5>
+                        <p class="card-text">Hand-made by myself.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
