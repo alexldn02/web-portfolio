@@ -30,9 +30,9 @@ h1.mb-4 {
 .card {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f070;
+    background-color: #f0f0f0c0;
     border-radius: 50px;
     border: none;
-    backdrop-filter: blur(1vw);
+    backdrop-filter: blur(2vw);
     z-index: 1;
 }
